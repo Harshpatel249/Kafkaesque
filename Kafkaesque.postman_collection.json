@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "f82df727-9882-4331-b8d8-37c96ca216ef",
+		"name": "Kafkaesque",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38315609"
+	},
+	"item": [
+		{
+			"name": "consume",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/kafka/consume",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"kafka",
+						"consume"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "produce",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/kafka/publish?message=FukumaMezus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"kafka",
+						"publish"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "FukumaMezus"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
